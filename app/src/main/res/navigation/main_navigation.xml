@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@+id/preparationFragment">
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.mczuba.blooddonorcompanion.vm.InfoFragment"
+        tools:layout="@layout/fragment_info" />
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.mczuba.blooddonorcompanion.vm.SummaryFragment"
+        tools:layout="@layout/fragment_summary" >
+        <action
+            android:id="@+id/action_navigation_summary_to_newRecordFragment"
+            app:destination="@id/newRecordFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/fragment_open_exit"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_navigation_summary_to_scheduleRecordFragment"
+            app:destination="@id/scheduleRecordFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/fragment_open_exit"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.mczuba.blooddonorcompanion.vm.records.HistoryFragment"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_newRecordFragment"
+            app:destination="@id/newRecordFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/fragment_open_exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/scheduleRecordFragment"
+        android:name="com.mczuba.blooddonorcompanion.vm.editors.ScheduleRecordFragment"
+        android:label="ScheduleRecordFragment"
+        tools:layout="@layout/fragment_record_schedule" >
+    </fragment>
+    <fragment
+    android:id="@+id/newRecordFragment"
+    android:name="com.mczuba.blooddonorcompanion.vm.editors.NewRecordFragment"
+    android:label="NewRecordFragment"
+    tools:layout="@layout/fragment_record_new" >
+        <argument
+            android:name="donationArgument"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/preparationFragment"
+        android:name="com.mczuba.blooddonorcompanion.vm.BlankFragment"
+        android:label="BlankFragment"
+        tools:layout="@layout/fragment_blank">
+        <action
+            android:id="@+id/action_blankFragment_to_navigation_summary"
+            app:destination="@id/summaryFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@id/preparationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

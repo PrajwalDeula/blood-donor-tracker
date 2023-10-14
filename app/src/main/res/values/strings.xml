@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name" translatable="false">Blood Donor Tracking App</string>
+
+    //Navigation
+    <string name="menu_home">Home</string>
+    <string name="title_summary">Summary</string>
+    <string name="menu_history">History</string>
+    <string name="menu_info">Information</string>
+
+    //Text
+    <string name="text_donated">You have already donated</string>
+    <string name="donated_this_year">Donated this year</string>
+    <string name="left_to_next_donation">Left to next donation</string>
+
+    //Text with params
+    <string name="text_greeting">Hello %s,</string>
+    <string name="text_greeting2">how are you today?</string>
+
+    //Plurals
+    <plurals name="plural_daysLeft">
+        <!--
+             As a developer, you should always supply "one" and "other"
+             strings. Your translators will know which strings are actually
+             needed for their language. Always include %d in "one" because
+             translators will need to use %d for languages where "one"
+             doesn't mean 1 (as explained above).
+          -->
+        <item quantity="one"> day</item>
+        <item quantity="other"> days</item>
+    </plurals>
+
+    //Number formats
+    <string name="format_any" translatable="false">%s</string>
+    <string name="format_number" translatable="false">%,d</string>
+    <string name="format_decimal" translatable="false">%.1f</string>
+    <string name="format_minutes" translatable="false">%.0fmin</string>
+    <string name="format_pressure" translatable="false">%d/%d</string>
+
+    //Arrays
+    <string name="donation_total">Total</string>
+    <string name="donation_whole">Whole Blood</string>
+    <string name="donation_wholeshort">Whole</string>
+    <string name="donation_plasma">Plasma</string>
+    <string name="donation_platelets">Platelets</string>
+    <string name="donation_disqualified">Disqualified</string>
+    <string name="donation_unknown">Unknown</string>
+
+    <string name="notification">Notification</string>
+    <string name="notification_none">Disabled</string>
+    <string name="notification_day">One Day earlier</string>
+    <string name="notification_3days">3 Days earlier</string>
+    <string name="notification_week">Week earlier</string>
+
+    <string-array name="donation_array">
+        <item>@string/donation_whole</item>
+        <item>@string/donation_plasma</item>
+        <item>@string/donation_platelets</item>
+        <item>@string/donation_disqualified</item>
+    </string-array>
+
+    <string-array name="notification_array">
+        <item>@string/notification_week</item>
+        <item>@string/notification_3days</item>
+        <item>@string/notification_day</item>
+        <item>@string/notification_none</item>
+    </string-array>
+
+    <string name="arm_string">Arm</string>
+    <string-array name="arm_array">
+        <item>Right</item>
+        <item>Left</item>
+        <item>Unknown</item>
+    </string-array>
+
+    <string-array name="arm_array_short">
+        <item>R</item>
+        <item>L</item>
+        <item>-</item>
+    </string-array>
+
+    <string name="gender_string">Gender</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="bloodtype">Blood Type</string>
+
+    //Controls
+    <string name="control_expand">Expand</string>
+    <string name="control_shrink">Shrink</string>
+
+    //Pref keys
+    <string name="pref_currentuser_key" translatable="false">CurrentUser</string>
+    <string name="pref_donorprefs" translatable="false">DonorPrefs</string>
+
+    //Donation editor
+    <string name="donation_new">New Donation</string>
+    <string name="donation_edit">Edit Donation</string>
+    <string name="donation_type">Donation Type</string>
+    <string name="donation_date">Date</string>
+    <string name="donation_location">Location</string>
+    <string name="donation_note">Note</string>
+    <string name="donation_arm">Arm</string>
+    <string name="donation_duration">Duration</string>
+    <string name="donation_amount">Amount</string>
+    <string name="donation_hemoglobin">Hemoglobin</string>
+    <string name="donation_diastolic">Diastolic</string>
+    <string name="donation_systolic">Systolic</string>
+    <string name="donation_submit">Submit</string>
+    <string name="donation_submitedit">Apply</string>
+    <string name="history_empty">-Empty-</string>
+
+    //Menu
+    <string name="record_edit">Edit</string>
+    <string name="record_remove">Remove</string>
+
+    //Schedule
+    <string name="donation_scheduletitle">Schedule a Donation</string>
+    <string name="schedule_upcomingtext">Upcoming Planned Donation</string>
+    <string name="schedule_nothingyet">Nothing scheduled for now..</string>
+    <string name="schedule_in">In</string>
+    <string name="schedule_button">Schedule</string>
+    <string name="schedule_buttonremove">Remove</string>
+    <string name="greet_begin">Begin</string>
+    <string name="greet_allready">All is up!</string>
+    <string name="greet_youcanbegin">You\'re ready to go!</string>
+    <string name="info_bloodbanks">Status Of Blood Banks In Nepal</string>
+    <string name="text_blooddonorinfo">Blood Donor Info</string>
+    <string name="text_welcomegreeting">Welcome to BloodApp!</string>
+    <string name="twoja_historia_krwiodawstwa_pod_r_k">Your blood donations at your fingertips</string>
+    <string name="text_infopreparation">• be well rested\n• drink about 2 liters of fluid during the day before donation\n• eat an easily digestible meal before donating blood\n• avoid excessive physical exertion on the day of donation\n• reduce cigarette smoking\n• Don\'t come to donate blood after consuming alcohol or other mood-altering substances</string>
+    <string name="text_infoprepare">How do I prepare?</string>
+    <string name="newdonor_createnew">Create a New Donor</string>
+
+    <string name="user_name">Name</string>
+    <string name="user_birthday">Birthday</string>
+    <string name="user_gender">Gender</string>
+    <string name="user_notelocal">Note: All data is stored locally.</string>
+    <string name="user_submit">Submit</string>
+
+    //Greeting
+    <string-array name="onboarding_titles">
+        <item>Welcome to BloodApp!</item>
+        <item>Save your progress</item>
+        <item>Plan Donations</item>
+    </string-array>
+
+    <string-array name="onboarding_text">
+        <item>Your Blood donation History At Your Hand</item>
+        <item>Note Any Comments</item>
+        <item>Remember To Be Prepared!!</item>
+    </string-array>
+
+</resources>

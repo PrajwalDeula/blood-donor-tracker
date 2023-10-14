@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">>
+                <ImageView
+                    android:id="@+id/on_boarding_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    app:tint="@color/colorPrimary"
+                    android:src="@drawable/ic_baseline_done_24"/>
+                <TextView
+                    android:id="@+id/on_boarding_textbig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="The bond of blood is stronger than anything!"
+                    android:layout_weight="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <TextView
+                    android:id="@+id/on_boarding_textsmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="One bag of blood can bring back one from the dead!"
+                    android:layout_weight="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
